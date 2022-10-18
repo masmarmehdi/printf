@@ -1,11 +1,14 @@
-.TH man 3 "cohort 9,2022" "0.10" "_printf man page""
+.SH NAME 
+.B _printf
 * Formatted output conversion.
-*SH SYNOPSIS
-*#include "main.h"
+
+.SH SYNOPSIS
+.B #include "main.h"
 
 .B int _printf(const char *
 .I format
 .B , ...)
+
 .SH DESCRIPTION
 .B _printf()
 Prints to standard output under the control of a 
@@ -31,7 +34,7 @@ The const char * argument is expected to be a pointer to an array of character t
 
 .B S
 
-Prints a string. Non printable characters are printed as "\x" followed by their ASCII values in two digit hexadecimal
+Prints a string. Non printable characters are printed as "x" followed by their ASCII values in two digit hexadecimal
 
 .TP
 
@@ -79,20 +82,17 @@ Prints a string converted to rot13
 
 .B %
 
-A '%' is written but no argument is converted. The complete version specification is '%%'
+A '%' is written but no argument is converted. The complete version specification is "%%"
 
 .SH EXAMPLE
 
 #include "main.h"
 
-_printf("%s", "my name",);
+_printf("%s", 'my name',);
 
 .SH SEE ALSO
 
 .I printf(3)
-
-.SH BUGS
-
 No known bugs.
 
 .SH AUTHORS
