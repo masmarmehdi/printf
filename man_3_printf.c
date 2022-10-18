@@ -1,8 +1,7 @@
-SH NAME
-.B _printf
-- Formatted output conversion.
-.SH SYNOPSIS
-.B #include "main.h"
+.TH man 3 "cohort 9,2022" "0.10" "_printf man page""
+* Formatted output conversion.
+*SH SYNOPSIS
+*#include "main.h"
 
 .B int _printf(const char *
 .I format
